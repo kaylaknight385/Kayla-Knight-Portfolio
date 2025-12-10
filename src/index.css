@@ -13,6 +13,11 @@
 body {
     margin: 0;
     padding: 0;
+    cursor: url('./assets/cursoooor/ani979.ani'), auto;
+}
+
+* {
+    cursor: url('./assets/cursoooor/ani979.ani'), auto;
 }
 
 main h1{
@@ -21,23 +26,35 @@ main h1{
     font-size: 3em;
     display: flex;
     justify-content: center;
+    background: linear-gradient(135deg, #ff6ec4, #ff9a9e, #ffc3a0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 2px 2px 10px rgba(255, 110, 196, 0.3);
+    padding: 20px;
+    border: 3px solid transparent;
+    border-image: linear-gradient(135deg, #ff6ec4, #ffc3a0) 1;
+    border-radius: 20px;
 }
 
 #homePage{
     height: 100vh;
     width: 100vw;
     color: rgb(252, 251, 252);
-    background: url("./assets/gamer.gif") rgb(83, 2, 66) center;
+    background: url("./assets/cutegif.gif") center, 
+                linear-gradient(135deg, #ffc3f0, #ff9ec4, #ffb3d9);
     background-repeat: no-repeat;
     padding-top: 80px;
 }
 .headerNav {
-    background: rgb(179, 3, 153);
-    padding: 10px 0;
+    background: linear-gradient(135deg, #ff6ec4, #ff9ec4, #ffb3d9);
+    padding: 15px 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    border-bottom: 4px solid #ff6ec4;
+    box-shadow: 0 4px 15px rgba(255, 110, 196, 0.4);
 }
 
 #homeNav{
@@ -46,7 +63,7 @@ main h1{
     display: flex;
     justify-content: space-around;
     width: 100%;
-    background: rgb(179, 3, 153);
+    background: transparent;
     margin: 0;
     padding: 0;
 }
@@ -59,39 +76,60 @@ li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fefdfd;
+    color: #ffffff;
     text-decoration: none;
     text-align: center;
-    padding : 10px 15px;
+    padding: 12px 20px;
     cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 li a:hover {
-    background-color: #ff0077;
-    color: black;
-    transition: .7s;
-    box-shadow: 5px 5px 20px white;
-    border-radius: 50px;
+    background: linear-gradient(135deg, #ffffff, #ffe6f0);
+    color: #ff6ec4;
+    border: 2px solid #ff6ec4;
+    transform: scale(1.1);
+    box-shadow: 0 5px 20px rgba(255, 110, 196, 0.6);
+    text-shadow: none;
 }
 
 /* Coming Soon Styling */
 #comingSoon{
     height: 800px;
     width: 1000px;
-    background: url("./assets/comingsoon.gif") black center;
+    background: url("./assets/comingsoon.gif") center;
     background-repeat: no-repeat;
+    border: 5px solid transparent;
+    border-image: linear-gradient(135deg, #ff6ec4, #ffc3a0) 1;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(255, 110, 196, 0.5);
 }
 
 .aboutPage{
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    background: linear-gradient(135deg, #ffc3f0, #ff9ec4, #ffb3d9, #ffd4e5);
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 80px;
+}
+
+.aboutPage h1 {
+    background: linear-gradient(135deg, #ffffff, #ffe6f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 2px 2px 10px rgba(255, 110, 196, 0.5);
+    padding: 20px;
+    border: 3px solid #ff6ec4;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(255, 110, 196, 0.4);
 }
 
 /* Sakura Flower Animation Styles from here DOOOOWN */
