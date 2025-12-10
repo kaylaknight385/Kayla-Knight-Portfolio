@@ -1,3 +1,5 @@
+import MusicPlayer from './MusicPlayer';
+
 function Home() {
   return (
     <div id="homePage">
@@ -5,6 +7,7 @@ function Home() {
         <h1>Ayyyye
             Welcome 2 my page</h1>
       </main>
+      <MusicPlayer />
     </div>
   );
 }

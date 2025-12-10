@@ -268,3 +268,173 @@ li a:hover {
     pointer-events: none;
     position: absolute;
 }
+
+/* WAIT HERE DOWN IS NOW MY Music Player styles */
+.player {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+    width: fit-content;
+    border: #CECECE solid 2px;
+    border-radius: 100px;
+    background: linear-gradient(0deg, rgba(205,205,205,1) 0%, rgba(230,230,230,1) 30%, rgba(255,255,255,1) 100%);
+    padding: 5px;
+}
+
+.seek_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 6px;
+    background: #e4d5dc;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 8px;
+}
+
+.seek_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #cecece;
+    padding-top: 3px;
+    position: relative;
+    bottom: 3px;
+}
+
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("https://dl.dropbox.com/scl/fi/z8hqw29h8a9i3a3cbbxkt/MYRIADPRO-REGULAR.OTF?rlkey=begwqxljs2gzyw26h00oeovzi&st=px0mbeax&dl=0") format("woff");
+}
+
+.window, .title-bar {
+    font-family: "Myriad Pro";
+    -webkit-font-smoothing: none;
+    font-size: 11px;
+}
+
+.window {
+    padding: 10px;
+    width: 400px;
+}
+
+.window-body {
+    display: block;
+    margin: auto;
+    border-radius: 0em;
+}
+
+#musicplayer {
+    display: block;
+    float: center;
+    background: linear-gradient(0deg, #F1E3F0, white) padding-box, linear-gradient(to top, white, #A2A2A2) border-box;
+    border-radius: 60em;
+    border: 2px solid transparent;
+    margin-left: 10px;
+    padding-left: 3px;
+    box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.27) inset;
+    -webkit-box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.27) inset;
+    -moz-box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.27) inset;
+}
+
+.wheel {
+    display: block;
+    justify-content: center;
+    margin: auto;
+    background: linear-gradient(white, white) padding-box, linear-gradient(to top, white, #A2A2A2) border-box;
+    border-radius: 50em;
+    border: 2px solid transparent;
+    padding-top: 0px;
+    box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.27) inset;
+    -webkit-box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.27) inset;
+    -moz-box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.27) inset;
+}
+
+.innerwheel {
+    border-radius: 50em;
+    border: 2px solid #E2E2E2;
+    padding: 9px;
+    padding-left: 10px;
+    padding-right: 12px;
+    margin: 0;
+    box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.17) inset;
+    -webkit-box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.17) inset;
+    -moz-box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.17) inset;
+}
+
+.wheelcontrols {
+    font-size: 14px !important;
+    text-align: center;
+    padding-top: 2px;
+    color: #aaa;
+    opacity: 0.8;
+}
+
+.wheelcontrols button {
+    background: none;
+    border: none;
+    color: #aaa;
+    opacity: 0.6;
+    font-size: 14px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.wheelcontrols button:hover {
+    opacity: 1;
+}
+
+.controls button:hover {
+    opacity: 1;
+}
+
+.playpause-track {
+    font-size: 22px !important;
+    padding: 3px;
+}
+
+.songtitle {
+    padding: 25px;
+    color: #f750de;
+    padding-bottom: 0;
+    margin-left: 15px;
+    margin-right: 20px;
+    font-size: 16px;
+    display: block;
+    font-family: Myriad Pro;
+}
+
+.controls button {
+    display: block;
+    margin-left: 15px;
+    font-size: 14px !important;
+    text-align: center;
+    color: #ed066a;
+    opacity: 0.6;
+}
+
+.seeking {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    padding-left: 0;
+    padding-bottom: 0px;
+    color: #A3A3A3;
+}
+
+.current-time {
+    padding-right: 5px;
+}
+
+.total-duration {
+    padding-left: 5px;
+}
