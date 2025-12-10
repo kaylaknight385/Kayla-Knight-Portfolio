@@ -7,6 +7,18 @@ function MusicPlayer() {
       {
         name: "Girls Gone Wild - JT",
         path: girlsGoneWild
+      },
+       {
+        name: "Girls Gone Wild - JT",
+        path: girlsGoneWild
+      },
+       {
+        name: "Girls Gone Wild - JT",
+        path: girlsGoneWild
+      },
+       {
+        name: "Girls Gone Wild - JT",
+        path: girlsGoneWild
       }
     ];
 

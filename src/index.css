@@ -13,11 +13,11 @@
 body {
     margin: 0;
     padding: 0;
-    cursor: url('./assets/cursoooor/ani979.ani'), auto;
+    cursor: url('./assets/cursoooor/oth800.cur'), auto;
 }
 
 * {
-    cursor: url('./assets/cursoooor/ani979.ani'), auto;
+    cursor: url('./assets/cursoooor/oth800.cur'), auto;
 }
 
 main h1{
@@ -40,9 +40,9 @@ main h1{
     height: 100vh;
     width: 100vw;
     color: rgb(252, 251, 252);
-    background: url("./assets/cutegif.gif") center, 
-                linear-gradient(135deg, #8b2f6b, #a84478, #c25a8a);
+    background: url("./assets/cutegif.gif") center center, linear-gradient(135deg, #8b2f6b, #a84478, #c25a8a);
     background-repeat: no-repeat;
+    background-size: contain;
     padding-top: 80px;
 }
 .headerNav {
@@ -280,7 +280,7 @@ li a:hover {
     width: fit-content;
     border: #CECECE solid 2px;
     border-radius: 100px;
-    background: linear-gradient(0deg, rgba(205,205,205,1) 0%, rgba(230,230,230,1) 30%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(0deg, rgb(251, 67, 190) 0%, rgb(253, 171, 234) 30%, rgb(245, 224, 242) 100%);
     padding: 5px;
 }
 
@@ -336,7 +336,7 @@ li a:hover {
 #musicplayer {
     display: block;
     float: center;
-    background: linear-gradient(0deg, #F1E3F0, white) padding-box, linear-gradient(to top, white, #A2A2A2) border-box;
+    background: linear-gradient(0deg, #f9abf4, white) padding-box, linear-gradient(to top, white, #fb86ed) border-box;
     border-radius: 60em;
     border: 2px solid transparent;
     margin-left: 10px;
@@ -350,7 +350,7 @@ li a:hover {
     display: block;
     justify-content: center;
     margin: auto;
-    background: linear-gradient(white, white) padding-box, linear-gradient(to top, white, #A2A2A2) border-box;
+    background: linear-gradient(white, rgb(255, 175, 234)) padding-box, linear-gradient(to top, white, #f909bd) border-box;
     border-radius: 50em;
     border: 2px solid transparent;
     padding-top: 0px;
@@ -361,10 +361,10 @@ li a:hover {
 
 .innerwheel {
     border-radius: 50em;
-    border: 2px solid #E2E2E2;
+    border: 2px solid #87036c;
     padding: 9px;
-    padding-left: 10px;
-    padding-right: 12px;
+    padding-left: 11px;
+    padding-right: 11px;
     margin: 0;
     box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.17) inset;
     -webkit-box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.17) inset;
@@ -375,14 +375,14 @@ li a:hover {
     font-size: 14px !important;
     text-align: center;
     padding-top: 2px;
-    color: #aaa;
+    color: #2e0101;
     opacity: 0.8;
 }
 
 .wheelcontrols button {
     background: none;
     border: none;
-    color: #aaa;
+    color: #2b0101;
     opacity: 0.6;
     font-size: 14px;
     padding: 2px;
@@ -428,7 +428,7 @@ li a:hover {
     padding: 10px;
     padding-left: 0;
     padding-bottom: 0px;
-    color: #A3A3A3;
+    color: #575757;
 }
 
 .current-time {
