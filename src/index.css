@@ -40,7 +40,7 @@ main h1{
     height: 100vh;
     width: 100vw;
     color: rgb(252, 251, 252);
-    background: url("./assets/cutegif.gif") center center, linear-gradient(135deg, #8b2f6b, #a84478, #c25a8a);
+    background: url("./assets/images/cutegif.gif") center center, linear-gradient(135deg, #8b2f6b, #a84478, #c25a8a);
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 80px;
@@ -99,7 +99,7 @@ li a:hover {
 #comingSoon{
     height: 800px;
     width: 1000px;
-    background: url("./assets/comingsoon.gif") center;
+    background: url("./assets/images/comingsoon.gif") center;
     background-repeat: no-repeat;
     border: 5px solid transparent;
     border-image: linear-gradient(135deg, #ff6ec4, #ffc3a0) 1;
@@ -438,3 +438,39 @@ li a:hover {
 .total-duration {
     padding-left: 5px;
 }
+
+/* Decorative gifs around music player */
+.decor-gif {
+    position: fixed;
+    width: 80px;
+    height: 150px;
+    object-fit: contain;
+    z-index: 1001;
+    pointer-events: none;
+}
+
+.gif1 {
+    bottom: 80px;
+    left: 89px;
+}
+
+.gif2 {
+    bottom: 40px;
+    left: 420px;
+}
+
+.gif3 {
+    bottom: 240px;
+    left: 280px;
+}
+
+.gif4 {
+    bottom: 170px;
+    left: 350px;
+}
+
+.gif5 {
+    bottom: 240px;
+    left: 125px;
+}
+

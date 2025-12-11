@@ -1,5 +1,9 @@
 import { useEffect } from 'react';
 import girlsGoneWild from '../music/JT-Girls-Gone-Wild-(SixLoaded.com).mp3';
+import getPaid from '../music/GET-PAID.mp3'
+import eatMe from '../music/EAT-ME.mp3'
+import likeThat from '../music/I-LIKE-THAT.mp3'
+import yaDine from '../music/PUTTING U DINE.mp3'
 
 function MusicPlayer() {
   useEffect(() => {
@@ -9,16 +13,20 @@ function MusicPlayer() {
         path: girlsGoneWild
       },
        {
-        name: "Girls Gone Wild - JT",
-        path: girlsGoneWild
+        name: "Get Paid- Young Dolph",
+        path: getPaid
       },
        {
-        name: "Girls Gone Wild - JT",
-        path: girlsGoneWild
+        name: "EAT ME! - Rico Nasty",
+        path: eatMe
       },
        {
-        name: "Girls Gone Wild - JT",
-        path: girlsGoneWild
+        name: "I Like That - Metro Boomin, 2 Chainz, Waka Flacka Flame, Roscoe Dash",
+        path: likeThat
+      },
+      {
+        name: "Puttin' Ya Dine - Monaleo",
+        path: yaDine
       }
     ];
 
