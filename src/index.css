@@ -479,34 +479,38 @@ li a:hover {
 }
 
 
-/* Pretty bows across the page */
+/* Pretty bows littered across the page */
 .bow {
     position: fixed;
-    width: 100px;
-    height: 100px;
     object-fit: contain;
     z-index: 1002;
     pointer-events: none;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .bow1 {
-    left: 5%;
+    width: 140px;
+    height: 250px;
+    top: 0%;
+    left: 0%;
+    transform: rotate(-15deg);
 }
 
 .bow2 {
-    left: 25%;
+    width: 200px;
+    height: 250px;
+    top: 65%;
+    left: 87%;
+    transform: rotate(5deg);
 }
 
 .bow3 {
-    left: 45%;
+    width: 150px;
+    height: 150px;
+    top: 60%;
+    right: 90%;
+    transform: rotate(-5deg);
 }
 
-.bow4 {
-    left: 65%;
-}
 
-.bow5 {
-    left: 85%;
-}
+
+

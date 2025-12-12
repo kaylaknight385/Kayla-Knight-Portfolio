@@ -13,12 +13,11 @@ function Home() {
             Welcome 2 my page</h1>
       </main>
       
-      {/* Pretty bows across the page */}
+      {/* preeeeetty bows across the page */}
       <img src={bow} alt="bow" className="bow bow1" />
       <img src={bow} alt="bow" className="bow bow2" />
       <img src={bow} alt="bow" className="bow bow3" />
-      <img src={bow} alt="bow" className="bow bow4" />
-      <img src={bow} alt="bow" className="bow bow5" />
+      
       
       {/* doll gifs around music player */}
       <img src={gif1} alt="decoration" className="decor-gif gif1" />
