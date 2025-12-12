@@ -40,19 +40,21 @@ main h1{
     height: 100vh;
     width: 100vw;
     color: rgb(252, 251, 252);
-    background: url("./assets/images/cutegif.gif") center center, linear-gradient(135deg, #8b2f6b, #a84478, #c25a8a);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: url("./assets/images/cutegif.gif") center center, 
+                url("./assets/images/rainbowback.gif") center center,
+                linear-gradient(135deg, #8b2f6b, #a84478, #c25a8a);
+    background-repeat: no-repeat, repeat, no-repeat;
+    background-size: contain, 140%, cover;
     padding-top: 80px;
 }
 .headerNav {
     background: linear-gradient(135deg, #ff6ec4, #ff9ec4, #ffb3d9);
-    padding: 15px 0;
+    padding: 5px 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    border-bottom: 4px solid #ff6ec4;
+    border-bottom: 2px solid #ff6ec4;
     box-shadow: 0 4px 15px rgba(255, 110, 196, 0.4);
 }
 
@@ -110,7 +112,9 @@ li a:hover {
 .aboutPage{
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(135deg, #6b2456, #8b2f6b, #a84478, #c25a8a);
+    background: url("./assets/images/rainbowback.gif") center center;
+    background-repeat: repeat;
+    background-size: 150%;  /* Zoom in - increase number for more zoom (200%, 300%, etc) */
     color: white;
     display: flex;
     flex-direction: column;
@@ -474,3 +478,35 @@ li a:hover {
     left: 125px;
 }
 
+
+/* Pretty bows across the page */
+.bow {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    z-index: 1002;
+    pointer-events: none;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bow1 {
+    left: 5%;
+}
+
+.bow2 {
+    left: 25%;
+}
+
+.bow3 {
+    left: 45%;
+}
+
+.bow4 {
+    left: 65%;
+}
+
+.bow5 {
+    left: 85%;
+}

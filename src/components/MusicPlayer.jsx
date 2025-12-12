@@ -4,6 +4,8 @@ import getPaid from '../music/GET-PAID.mp3'
 import eatMe from '../music/EAT-ME.mp3'
 import likeThat from '../music/I-LIKE-THAT.mp3'
 import yaDine from '../music/PUTTING U DINE.mp3'
+import okayJt from '../music/OKAY-JT.mp3'
+import theLow from '../music/ON THE LOW.mp3'
 
 function MusicPlayer() {
   useEffect(() => {
@@ -12,22 +14,31 @@ function MusicPlayer() {
         name: "Girls Gone Wild - JT",
         path: girlsGoneWild
       },
-       {
-        name: "Get Paid- Young Dolph",
-        path: getPaid
-      },
-       {
-        name: "EAT ME! - Rico Nasty",
-        path: eatMe
-      },
-       {
-        name: "I Like That - Metro Boomin, 2 Chainz, Waka Flacka Flame, Roscoe Dash",
-        path: likeThat
+      {
+        name: "OKAY - JT",
+        path: okayJt
       },
       {
         name: "Puttin' Ya Dine - Monaleo",
         path: yaDine
-      }
+      },
+      {
+        name: "ON THE LOW - Rico Nasty",
+        path: theLow
+      },
+      {
+        name: "EAT ME! - Rico Nasty",
+        path: eatMe
+      },
+      {
+        name: "I Like That - Metro Boomin, 2 Chainz, Waka Flacka Flame, Roscoe Dash",
+        path: likeThat
+      },
+      {
+        name: "Get Paid- Young Dolph",
+        path: getPaid
+      },
+    
     ];
 
     let track_index = 0;
