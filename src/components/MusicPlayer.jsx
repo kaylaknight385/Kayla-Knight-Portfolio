@@ -6,6 +6,8 @@ import likeThat from '../music/I-LIKE-THAT.mp3'
 import yaDine from '../music/PUTTING U DINE.mp3'
 import okayJt from '../music/OKAY-JT.mp3'
 import theLow from '../music/ON THE LOW.mp3'
+import pepperRico from '../music/Rico Nasty - PEPPER.mp3'
+import baller from '../music/Summer Walker - Baller feat. GloRilla, Monaleo, Sexyy Red.mp3'
 
 function MusicPlayer() {
   useEffect(() => {
@@ -19,12 +21,20 @@ function MusicPlayer() {
         path: okayJt
       },
       {
+        name: "Baller - Summer Walker, Glorilla, Monaleo, Sexxy Red",
+        path: baller
+      },
+      {
         name: "Puttin' Ya Dine - Monaleo",
         path: yaDine
       },
       {
         name: "ON THE LOW - Rico Nasty",
         path: theLow
+      },
+      {
+        name: "PEPPER - Rico Nasty",
+        path: pepperRico
       },
       {
         name: "EAT ME! - Rico Nasty",
