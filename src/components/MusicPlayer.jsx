@@ -47,7 +47,7 @@ function MusicPlayer() {
       {
         name: "Get Paid- Young Dolph",
         path: getPaid
-      },
+      }
     
     ];
 
