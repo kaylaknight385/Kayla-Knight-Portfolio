@@ -2,10 +2,17 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Project Name",
-      description: "Brief description of your project",
+      title: "Task Manager",
+      description: "A fun, humorous, interactive task manager! Where you can create, edit, delete tasks. Filter through different task priorities and more! Check it out!",
       github: "https://github.com/kaylaknight385/task-dashboard",
-      demo: "https://your-demo-link.com"
+      demo: "https://taskdashboard-nu.vercel.app/"
+    },
+    {
+      id: 1,
+      title: "Secure Blog Page",
+      description: "A cozy secure blog page! Login as admin are review, delete, and edit existing posts from users.",
+      github: "https://github.com/kaylaknight385/reactBlog",
+      demo: "https://littlecorner-blog-8irq94fs1-kayla-knights-projects.vercel.app/"
     },
     // Add more
   ];

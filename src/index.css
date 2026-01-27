@@ -4,6 +4,15 @@
     src: url('./assets/cutefooont/04B_30__.TTF') format('truetype');
 }
 
+/* Color Palette - Soft Pastel Theme */
+:root {
+    --primary-pink: #FFB3D9;
+    --secondary-lavender: #D4A5FF;
+    --accent-peach: #FFCBA4;
+    --light-pink: #FFE5F1;
+    --dark-purple: #9B59B6;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -20,20 +29,31 @@ body {
     cursor: url('./assets/cursoooor/oth800.cur'), auto;
 }
 
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
 main h1{
     font-family: 'PixelFont', 'Courier New', Courier, monospace;
-    margin-top: 60px;
+    margin-top: 150px;
+    margin-left: 60px;
     font-size: 3em;
-    display: flex;
-    justify-content: center;
+    display: inline-block;
     color: #ffffff;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7), 
                  0 0 20px rgba(255, 110, 196, 0.8);
     padding: 20px;
     background: rgba(139, 47, 107, 0.6);
     border: 3px solid #ff6ec4;
-    border-radius: 20px;
+    border-radius: 25px;
     box-shadow: 0 5px 20px rgba(255, 110, 196, 0.5);
+    animation: bounce 2s ease-in-out infinite;
+    max-width: 60%;
 }
 
 #homePage{
@@ -994,4 +1014,123 @@ li a:hover {
     box-shadow: 0 5px 15px rgba(255, 110, 196, 0.4);
     font-size: 1.1em;
     margin: 0;
+}
+
+/* Guestbook Styles */
+.guestbook {
+    position: fixed;
+    right: 85px;
+    top: 80px;
+    bottom: 20px;
+    background: linear-gradient(135deg, #FFB3D9, #FFD4E5, #FFC8DD);
+    border: 4px solid #D4A5FF;
+    border-radius: 20px;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0 10px 30px rgba(212, 165, 255, 0.5);
+    z-index: 999;
+    overflow-y: auto;
+}
+
+.guestbook h2 {
+    font-family: 'PixelFont', 'Courier New', Courier, monospace;
+    color: #9B59B6;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.guestbook-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.guestbook-form input,
+.guestbook-form textarea {
+    font-family: 'PixelFont', 'Courier New', Courier, monospace;
+    padding: 12px 15px;
+    border: 3px solid #D4A5FF;
+    border-radius: 10px;
+    font-size: 1em;
+    background: rgba(255, 255, 255, 0.9);
+    color: #9B59B6;
+}
+
+.guestbook-form input:focus,
+.guestbook-form textarea:focus {
+    outline: none;
+    border-color: #9B59B6;
+    box-shadow: 0 0 10px rgba(212, 165, 255, 0.5);
+}
+
+.guestbook-form button {
+    font-family: 'PixelFont', 'Courier New', Courier, monospace;
+    background: linear-gradient(135deg, #D4A5FF, #B794F6);
+    color: white;
+    border: 3px solid white;
+    padding: 12px 25px;
+    border-radius: 15px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(155, 89, 182, 0.4);
+}
+
+.guestbook-form button:hover {
+    background: linear-gradient(135deg, #ffffff, #F3E5FF);
+    color: #9B59B6;
+    border: 3px solid #D4A5FF;
+    transform: scale(1.05);
+}
+
+.guestbook-entries {
+    max-height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.guestbook-entry {
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid #D4A5FF;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-family: 'PixelFont', 'Courier New', Courier, monospace;
+}
+
+.entry-header strong {
+    color: #9B59B6;
+    font-size: 1.1em;
+}
+
+.entry-date {
+    color: #9B59B6;
+    font-size: 0.9em;
+}
+
+.guestbook-entry p {
+    color: #9B59B6;
+    font-family: 'PixelFont', 'Courier New', Courier, monospace;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.no-entries {
+    text-align: center;
+    color: #9B59B6;
+    font-family: 'PixelFont', 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+    padding: 20px;
 }
