@@ -1,8 +1,18 @@
+import contactGif from '../assets/images/contact.gif';
+
 function Contact() {
   return (
-    <div className="aboutPage">
-      <div id="comingSoon"></div>
-      <h1>You can reach me very soon...</h1>
+    <div className="contactPage">
+      <div className="contact-container">
+        <img src={contactGif} alt="Contact" className="contact-gif" />
+        
+        <div className="contact-content">
+          <h1>Contact Me</h1>
+          <h3>
+            Feel free to reach out! I'd love to connect and chat about projects, opportunities, or just say hi!
+          </h3>
+        </div>
+      </div>
     </div>
   );
 }

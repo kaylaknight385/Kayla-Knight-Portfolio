@@ -99,40 +99,112 @@ li a:hover {
 
 /* Coming Soon Styling */
 #comingSoon{
-    height: 800px;
-    width: 1000px;
-    background: url("./assets/images/comingsoon.gif") center;
-    background-repeat: no-repeat;
-    border: 5px solid transparent;
-    border-image: linear-gradient(135deg, #ff6ec4, #ffc3a0) 1;
-    border-radius: 30px;
+    height: 400px;
+    width: 600px;
+    position: relative;
     box-shadow: 0 10px 30px rgba(255, 110, 196, 0.5);
+    flex-shrink: 0;
+}
+
+.bunny-background {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+    padding: 40px;
+    transform: scale(1.17);
+}
+
+.tumblr-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 105%;
+    height: 105%;
+    object-fit: fill;
+    z-index: 3;
+    pointer-events: none;
+}
+
+#comingSoon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 110, 196, 0.3) 0%,
+        rgba(255, 158, 196, 0.25) 25%,
+        rgba(179, 255, 255, 0.2) 50%,
+        rgba(255, 179, 217, 0.25) 75%,
+        rgba(255, 110, 196, 0.3) 100%
+    );
+    pointer-events: none;
+    mix-blend-mode: screen;
+    filter: blur(2px);
+    z-index: 2;
 }
 
 .aboutPage{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background: url("./assets/images/rainbowback.gif") center center;
     background-repeat: repeat;
-    background-size: 150%;  /* Zoom in - increase number for more zoom (200%, 300%, etc) */
+    background-size: 150%;
     color: white;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    padding: 120px 40px 40px;
+}
+
+.about-container {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.about-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     align-items: center;
-    padding-top: 80px;
 }
 
 .aboutPage h1 {
-    background: linear-gradient(135deg, #ffffff, #ffc3f0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 2px 2px 10px rgba(255, 110, 196, 0.5);
-    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 110, 196, 0.9), rgba(255, 158, 196, 0.9), rgba(255, 179, 217, 0.9));
+    color: white;
+    padding: 25px 35px;
+    border: 4px solid white;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(255, 110, 196, 0.6),
+                inset 0 2px 10px rgba(255, 255, 255, 0.3);
+    font-family: 'PixelFont', 'Courier New', Courier, monospace;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.aboutPage h3 {
+    background: rgba(255, 255, 255, 0.9);
+    color: #ff6ec4;
+    padding: 25px 30px;
     border: 3px solid #ff6ec4;
     border-radius: 20px;
     box-shadow: 0 5px 20px rgba(255, 110, 196, 0.4);
+    font-family: 'PixelFont', 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 600px;
+    text-align: left;
 }
 
 /* Sakura Flower Animation Styles from here DOOOOWN */
@@ -681,4 +753,205 @@ li a:hover {
 .popup-ok:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(255, 110, 196, 0.5);
+}
+
+/* Projects Page Styles */
+.projectsPage {
+    min-height: 100vh;
+    width: 100vw;
+    background: url("./assets/images/rainbowback.gif") center center;
+    background-repeat: repeat;
+    background-size: 150%;
+    color: white;
+    padding: 100px 40px 40px;
+}
+
+.projectsPage h1 {
+    font-family: 'PixelFont', 'Courier New', Courier, monospace;
+    font-size: 3em;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7), 
+                 0 0 20px rgba(255, 110, 196, 0.8);
+    margin-bottom: 50px;
+    padding: 20px;
+    background: rgba(139, 47, 107, 0.6);
+    border: 3px solid #ff6ec4;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(255, 110, 196, 0.5);
+}
+
+.projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projectCard {
+    background: rgba(255, 255, 255, 0.95);
+    border: 3px solid #ff6ec4;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(255, 110, 196, 0.4);
+    transition: all 0.3s ease;
+}
+
+.projectCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 35px rgba(255, 110, 196, 0.6);
+}
+
+.projectCard h2 {
+    font-family: 'PixelFont', 'Courier New', Courier, monospace;
+    color: #ff6ec4;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.projectCard p {
+    color: #8b2f6b;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.projectLinks {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.projectLinks a {
+    font-family: 'PixelFont', 'Courier New', Courier, monospace;
+    background: linear-gradient(135deg, #ff6ec4, #ff9ec4);
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 15px;
+    border: 2px solid #ff6ec4;
+    transition: all 0.3s ease;
+    font-size: 1em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.projectLinks a:hover {
+    background: linear-gradient(135deg, #ffffff, #ffe6f0);
+    color: #ff6ec4;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 110, 196, 0.5);
+}
+
+/* Clear All Popups Button */
+.clear-all-popups {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 10000;
+    background: linear-gradient(135deg, #ff6ec4, #ff9ec4);
+    color: white;
+    border: 3px solid #ff6ec4;
+    border-radius: 15px;
+    padding: 12px 25px;
+    font-family: 'PixelFont', 'Courier New', Courier, monospace;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(255, 110, 196, 0.5);
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.clear-all-popups:hover {
+    background: linear-gradient(135deg, #ffffff, #ffe6f0);
+    color: #ff6ec4;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 110, 196, 0.6);
+}
+
+.hotgirl-overlay {
+    position: absolute;
+    right: 80px;
+    bottom: 100px;
+    height: 200px;
+    width: auto;
+    z-index: 4;
+    border: 3px solid white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: rotate(-5deg);
+    transition: transform 0.3s ease;
+}
+
+.hotgirl-overlay:hover {
+    transform: rotate(-5deg) scale(1.05);
+}
+
+/* Contact Page Styles */
+.contactPage {
+    min-height: 100vh;
+    width: 100vw;
+    background: url("./assets/images/rainbowback.gif") center center;
+    background-repeat: repeat;
+    background-size: 150%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 120px 40px 40px;
+}
+
+.contact-container {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.contact-gif {
+    width: 600px;
+    height: 500px;
+    bottom: 20px;
+    object-fit: cover;
+    border: 4px solid #ff6ec4;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(255, 110, 196, 0.5);
+    flex-shrink: 0;
+}
+
+.contact-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.contactPage h1 {
+    background: linear-gradient(135deg, rgba(255, 110, 196, 0.9), rgba(255, 158, 196, 0.9), rgba(255, 179, 217, 0.9));
+    color: white;
+    padding: 25px 35px;
+    border: 4px solid white;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(255, 110, 196, 0.6),
+                inset 0 2px 10px rgba(255, 255, 255, 0.3);
+    font-family: 'PixelFont', 'Courier New', Courier, monospace;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contactPage h3 {
+    background: rgba(255, 255, 255, 0.9);
+    color: #ff6ec4;
+    padding: 25px 30px;
+    border: 3px solid #ff6ec4;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(255, 110, 196, 0.4);
+    font-family: 'PixelFont', 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 600px;
+    text-align: left;
 }
