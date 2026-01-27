@@ -11,6 +11,15 @@ function Contact() {
           <h3>
             Feel free to reach out! I'd love to connect and chat about projects, opportunities, or just say hi!
           </h3>
+          
+          <div className="contact-links">
+            <a href="https://www.linkedin.com/in/kay-knight" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+            <a href="mailto:kaylaknight385@gmail.com">
+              Email Me
+            </a>
+          </div>
         </div>
       </div>
     </div>
