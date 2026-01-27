@@ -8,13 +8,20 @@ function Projects() {
       demo: "https://taskdashboard-nu.vercel.app/"
     },
     {
-      id: 1,
+      id: 2,
       title: "Secure Blog Page",
       description: "A cozy secure blog page! Login as admin are review, delete, and edit existing posts from users.",
       github: "https://github.com/kaylaknight385/reactBlog",
       demo: "https://littlecorner-blog-8irq94fs1-kayla-knights-projects.vercel.app/"
     },
-    // Add more
+     {
+      id: 2,
+      title: "Secure Blog Page",
+      description: "A cozy secure blog page! Login as admin are review, delete, and edit existing posts from users.",
+      github: "https://github.com/kaylaknight385/reactBlog",
+      demo: "https://littlecorner-blog-8irq94fs1-kayla-knights-projects.vercel.app/"
+    },
+    // add more
   ];
 
   return (

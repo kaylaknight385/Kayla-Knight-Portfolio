@@ -8,10 +8,16 @@ import okayJt from '../music/OKAY-JT.mp3'
 import theLow from '../music/ON THE LOW.mp3'
 import pepperRico from '../music/Rico Nasty - PEPPER.mp3'
 import baller from '../music/Summer Walker - Baller feat. GloRilla, Monaleo, Sexyy Red.mp3'
+import pretty from '../music/Keri Hilson - Pretty Girl Rock.mp3'
+
 
 function MusicPlayer() {
   useEffect(() => {
     const track_list = [
+      {
+        name: "Pretty Girl Rock - Keri Hilson",
+        path: pretty
+      },
       {
         name: "Girls Gone Wild - JT",
         path: girlsGoneWild
@@ -45,10 +51,10 @@ function MusicPlayer() {
         path: likeThat
       },
       {
-        name: "Get Paid- Young Dolph",
+        name: "Get Paid - Young Dolph",
         path: getPaid
-      }
-    
+      }, 
+      
     ];
 
     let track_index = 0;
