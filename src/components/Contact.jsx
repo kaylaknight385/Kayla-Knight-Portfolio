@@ -16,9 +16,9 @@ function Contact() {
             <a href="https://www.linkedin.com/in/kay-knight" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
-            <a href="mailto:kaylaknight385@gmail.com">
-              Email Me
-            </a>
+            <h4>Email me: 
+              bunnykay248@gmail.com
+            </h4>
           </div>
         </div>
       </div>

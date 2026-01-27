@@ -983,3 +983,15 @@ li a:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(255, 110, 196, 0.6);
 }
+
+.contactPage h4 {
+    font-family: 'PixelFont', 'Courier New', Courier, monospace;
+    background: rgba(255, 255, 255, 0.95);
+    color: #ff6ec4;
+    padding: 15px 30px;
+    border: 3px solid #ff6ec4;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(255, 110, 196, 0.4);
+    font-size: 1.1em;
+    margin: 0;
+}
