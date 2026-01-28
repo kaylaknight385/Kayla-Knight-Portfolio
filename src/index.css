@@ -73,7 +73,7 @@ main h1{
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 1001;
     border-bottom: 2px solid #ff6ec4;
     box-shadow: 0 4px 15px rgba(255, 110, 196, 0.4);
 }
@@ -541,7 +541,7 @@ li a:hover {
     width: 80px;
     height: 150px;
     object-fit: contain;
-    z-index: 1001;
+    z-index: 999;
     pointer-events: none;
 }
 
@@ -607,7 +607,7 @@ li a:hover {
 
 
 
-/* Cute Popup Windows */
+/* cute popup windows */
 .popup-window {
     position: fixed;
     width: 350px;
@@ -816,6 +816,8 @@ li a:hover {
     padding: 30px;
     box-shadow: 0 8px 25px rgba(255, 110, 196, 0.4);
     transition: all 0.3s ease;
+    position: relative;
+    z-index: 1000;
 }
 
 .projectCard:hover {
