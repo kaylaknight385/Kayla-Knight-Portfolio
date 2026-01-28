@@ -15,11 +15,11 @@ function Projects() {
       demo: "https://littlecorner-blog-8irq94fs1-kayla-knights-projects.vercel.app/"
     },
      {
-      id: 2,
-      title: "Secure Blog Page",
-      description: "A cozy secure blog page! Login as admin are review, delete, and edit existing posts from users.",
-      github: "https://github.com/kaylaknight385/reactBlog",
-      demo: "https://littlecorner-blog-8irq94fs1-kayla-knights-projects.vercel.app/"
+      id: 3,
+      title: "Theme-Switching To-Do List",
+      description: "Weather theme switching to-do list! Click through the toggle button to view themes, add to the mini dashboard your daily to-do.",
+      github: "https://github.com/kaylaknight385/toDoApp",
+      demo: "https://to-do-3a0wweqah-kayla-knights-projects.vercel.app/"
     },
     // add more
   ];
