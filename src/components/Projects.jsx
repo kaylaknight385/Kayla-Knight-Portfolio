@@ -21,6 +21,14 @@ function Projects() {
       github: "https://github.com/kaylaknight385/toDoApp",
       demo: "https://to-do-3a0wweqah-kayla-knights-projects.vercel.app/"
     },
+    {
+      id: 4,
+      title: "Investor Insights Dashboard ",
+      description: "A real-time financial dashboard that provides investors with live market data, stock tracking, and financial news.",
+      github: "https://github.com/kaylaknight385/APIDashboard",
+      demo: "precious-pony-36fd62.netlify.app"
+    },
+
     // add more
   ];
 
