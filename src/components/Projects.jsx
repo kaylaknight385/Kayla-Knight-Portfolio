@@ -26,7 +26,7 @@ function Projects() {
       title: "Investor Insights Dashboard ",
       description: "A real-time financial dashboard that provides investors with live market data, stock tracking, and financial news.",
       github: "https://github.com/kaylaknight385/APIDashboard",
-      demo: "precious-pony-36fd62.netlify.app"
+      demo: "https://precious-pony-36fd62.netlify.app"
     },
 
     // add more
