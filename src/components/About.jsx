@@ -13,9 +13,9 @@ function About() {
         <div className="about-content">
           <h1>ABOUT ME</h1>
           <h3>
-            Omg hiiii! Welcome to my portfolio page! My name is Bunnykay, I am 26 year old Full Stack Software Engineer of 2 years. I started my coding journey in 2025, with over 35+ projoects.
+            Omg hiiii! Yes, that gorgeous woman is meeeeee! Welcome to my portfolio page! My name is Kayla, I am 26 year old Full Stack Software Engineer of 2 years, with over 35+ projects!
             I love reading, cooking soul food, dancing, video games, fashion, makeup. I could go ooooon. Please check out 
-            my projects, contact me, and leave a cool message in my guest book! MWAH! XOXO Bunny~
+            my projects, contact me, and leave a cool message in my guest book! MWAH! XOXO~
             </h3>
           <img src="../assets/images/album.png" alt="Hello Kitty Album" />
         </div>
