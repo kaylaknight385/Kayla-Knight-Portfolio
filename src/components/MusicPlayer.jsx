@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import Draggable from 'react-draggable';
 import girlsGoneWild from '../music/JT-Girls-Gone-Wild-(SixLoaded.com).mp3';
 import getPaid from '../music/GET-PAID.mp3'
 import eatMe from '../music/EAT-ME.mp3'
@@ -158,51 +159,53 @@ function MusicPlayer() {
   }, []);
 
   return (
-    <div className="player">
-      <div className="window">
-        <div className="window-body">
-          <div className="flex">
-            <div className="wheel" style={{height: '100px', width: '100px'}}>
-              <div className="wheelcontrols">
-                <button className="fas fa-plus" onClick={() => window.volumeUp()} style={{paddingTop: '4px', paddingBottom: '0'}}></button>
+    <Draggable handle=".window" defaultPosition={{ x: 20, y: window.innerHeight - 200 }}>
+      <div className="player" style={{ position: 'fixed' }}>
+        <div className="window" style={{ cursor: 'grab' }}>
+          <div className="window-body">
+            <div className="flex">
+              <div className="wheel" style={{height: '100px', width: '100px'}}>
+                <div className="wheelcontrols">
+                  <button className="fas fa-plus" onClick={() => window.volumeUp()} style={{paddingTop: '4px', paddingBottom: '0'}}></button>
+                </div>
+                <table className="wheelcontrols">
+                  <tbody>
+                    <tr>
+                      <th><button className="fas fa-backward" onClick={() => window.prevTrack()}></button></th>
+                      <th className="innerwheel"><button className="playpause-track fas fa-play" onClick={() => window.playpauseTrack()}></button></th>
+                      <th><button className="fas fa-forward" onClick={() => window.nextTrack()}></button></th>
+                    </tr>
+                  </tbody>
+                </table>
+                <div className="wheelcontrols" style={{padding: '0'}}>
+                  <button className="fas fa-minus" onClick={() => window.volumeDown()}></button>
+                </div>
               </div>
-              <table className="wheelcontrols">
-                <tbody>
-                  <tr>
-                    <th><button className="fas fa-backward" onClick={() => window.prevTrack()}></button></th>
-                    <th className="innerwheel"><button className="playpause-track fas fa-play" onClick={() => window.playpauseTrack()}></button></th>
-                    <th><button className="fas fa-forward" onClick={() => window.nextTrack()}></button></th>
-                  </tr>
-                </tbody>
-              </table>
-              <div className="wheelcontrols" style={{padding: '0'}}>
-                <button className="fas fa-minus" onClick={() => window.volumeDown()}></button>
+              <div id="musicplayer">
+                <div className="flex">
+                  <marquee scrollAmount="4" className="songtitle"></marquee>
+                </div>
+                <div className="seeking">
+                  <div className="current-time">00:00</div>
+                  <input type="range" min="1" max="100" defaultValue="0" className="seek_slider" onChange={() => window.seekTo()} />
+                  <div className="total-duration">0:00</div>
+                </div>
+                <table className="controls">
+                  <tbody>
+                    <tr>
+                      <td><button><div className="fas fa-sync"></div></button></td>
+                      <td><button><div className="fas fa-music"></div></button></td>
+                      <td><button><div className="fas fa-random"></div></button></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <audio id="music" src=""></audio>
               </div>
-            </div>
-            <div id="musicplayer">
-              <div className="flex">
-                <marquee scrollAmount="4" className="songtitle"></marquee>
-              </div>
-              <div className="seeking">
-                <div className="current-time">00:00</div>
-                <input type="range" min="1" max="100" defaultValue="0" className="seek_slider" onChange={() => window.seekTo()} />
-                <div className="total-duration">0:00</div>
-              </div>
-              <table className="controls">
-                <tbody>
-                  <tr>
-                    <td><button><div className="fas fa-sync"></div></button></td>
-                    <td><button><div className="fas fa-music"></div></button></td>
-                    <td><button><div className="fas fa-random"></div></button></td>
-                  </tr>
-                </tbody>
-              </table>
-              <audio id="music" src=""></audio>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </Draggable>
   );
 }
 
