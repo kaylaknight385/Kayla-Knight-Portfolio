@@ -10,6 +10,11 @@ import theLow from '../music/ON THE LOW.mp3'
 import pepperRico from '../music/Rico Nasty - PEPPER.mp3'
 import baller from '../music/Summer Walker - Baller feat. GloRilla, Monaleo, Sexyy Red.mp3'
 import pretty from '../music/Keri Hilson - Pretty Girl Rock.mp3'
+import hot from '../music/Denzel Curry, A$AP Ferg, Tia Corine - HOT ONE (Lyrics).mp3'
+import checkit from '../music/Beyoncé - Check On It (Official Video) ft. Bun B, Slim Thug.mp3'
+import GAPeach from '../music/Latto - Georgia Peach (Official Video).mp3'
+import bugatti from '../music/Trim - Bugatti (Official Music Video) prod. @Goxan.mp3'
+import cars from '../music/Top Of Cars.mp3'
 
 
 function MusicPlayer() {
@@ -55,6 +60,27 @@ function MusicPlayer() {
         name: "Get Paid - Young Dolph",
         path: getPaid
       }, 
+      {
+        name: "Georgia Peach - Latto",
+        path: GAPeach
+      },
+       {
+        name: "HOT ONE - Denzel Curry, A$AP Ferg, Tia Corine",
+        path: hot
+      },
+       {
+        name: "Bugatti - Trim",
+        path: bugatti
+      },
+      {
+        name: "Check On It - Beyonce",
+        path: checkit
+      },
+      {
+        name: "Top of Cars - Lil M.U.",
+        path: cars
+      },
+    
       
     ];
 
@@ -159,8 +185,8 @@ function MusicPlayer() {
   }, []);
 
   return (
-    <Draggable handle=".window" defaultPosition={{ x: 20, y: window.innerHeight - 200 }}>
-      <div className="player" style={{ position: 'fixed' }}>
+    <Draggable handle=".window" defaultPosition={{ x: 20, y: -180 }}>
+      <div className="player">
         <div className="window" style={{ cursor: 'grab' }}>
           <div className="window-body">
             <div className="flex">

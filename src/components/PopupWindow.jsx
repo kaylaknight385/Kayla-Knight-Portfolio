@@ -6,7 +6,7 @@ function PopupWindow({ message, onClose, initialPosition }) {
       defaultPosition={initialPosition}
       handle=".popup-header"
     >
-      <div className="popup-window" style={{ position: 'fixed' }}>
+      <div className="popup-window">
         <div className="popup-header" style={{ cursor: 'grab' }}>
           <span className="popup-title">♡ reminder:</span>
           <button className="popup-close" onClick={onClose}>×</button>
