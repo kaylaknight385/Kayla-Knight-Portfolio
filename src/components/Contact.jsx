@@ -16,8 +16,11 @@ function Contact() {
             <a href="https://www.linkedin.com/in/kay-knight" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
+            <a href="/Knight, Kayla Resume (2).pdf" download="Kayla_Knight_Resume.pdf">
+              Download Resume
+            </a>
             <h4>Email me: 
-              bunnykay248@gmail.com
+              Kaylaknight385@gmail.com
             </h4>
           </div>
         </div>

@@ -1,4 +1,12 @@
+import { useState } from 'react';
+
 function Projects() {
+  const [failedIframes, setFailedIframes] = useState(new Set([2, 3])); // Pre-mark blog and theme-switch as failed
+
+  const handleIframeError = (projectId) => {
+    setFailedIframes(prev => new Set([...prev, projectId]));
+  };
+
   const projects = [
     {
       id: 1,
@@ -6,6 +14,13 @@ function Projects() {
       description: "A fun, humorous, interactive task manager! Where you can create, edit, delete tasks. Filter through different task priorities and more! Check it out!",
       github: "https://github.com/kaylaknight385/task-dashboard",
       demo: "https://taskdashboard-nu.vercel.app/"
+    },
+    {
+      id: 4,
+      title: "Investor Insights Dashboard ",
+      description: "A real-time financial dashboard that provides investors with live market data, stock tracking, and financial news.",
+      github: "https://github.com/kaylaknight385/APIDashboard",
+      demo: "https://precious-pony-36fd62.netlify.app"
     },
     {
       id: 2,
@@ -20,13 +35,6 @@ function Projects() {
       description: "Weather theme switching to-do list! Click through the toggle button to view themes, add to the mini dashboard your daily to-do.",
       github: "https://github.com/kaylaknight385/toDoApp",
       demo: "https://to-do-3a0wweqah-kayla-knights-projects.vercel.app/"
-    },
-    {
-      id: 4,
-      title: "Investor Insights Dashboard ",
-      description: "A real-time financial dashboard that provides investors with live market data, stock tracking, and financial news.",
-      github: "https://github.com/kaylaknight385/APIDashboard",
-      demo: "https://precious-pony-36fd62.netlify.app"
     },
 
     // add more
@@ -50,6 +58,23 @@ function Projects() {
                 </a>
               )}
             </div>
+            {project.demo && (
+              <div className="projectPreview">
+                {failedIframes.has(project.id) && (
+                  <div className="preview-fallback">
+                    <p>Preview not available</p>
+                    <p>Click "Live Demo" to visit →</p>
+                  </div>
+                )}
+                <iframe 
+                  src={project.demo} 
+                  title={`${project.title} preview`}
+                  loading="lazy"
+                  onError={() => handleIframeError(project.id)}
+                  sandbox="allow-same-origin allow-scripts allow-forms"
+                />
+              </div>
+            )}
           </div>
         ))}
       </div>

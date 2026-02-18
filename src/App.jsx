@@ -38,6 +38,9 @@ function App() {
       <img src={bow} alt="bow" className="bow bow1" />
       <img src={bow} alt="bow" className="bow bow2" />
       <img src={bow} alt="bow" className="bow bow3" />
+      <img src={bow} alt="bow" className="bow bow4" />
+      <img src={bow} alt="bow" className="bow bow5" />
+      <img src={bow} alt="bow" className="bow bow6" />
     </>
   );
 }

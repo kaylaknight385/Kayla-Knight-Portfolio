@@ -6,17 +6,15 @@ function PopupManager() {
 
   const cuteMessages = [
     "i love you so much! ♡",
-    "you're sooo fine DAMN!",
-    "stay with me you gorgeous human ♡",
-    "a hotties like you deserves $10k",
-    "i wanna kiss u so bad!",
+    "you're sooo fun WOW!",
+    "stay with me you wonderful human ♡",
+    "a sweetie like you deserves $10k",
     "you're doing amazing!",
     "hi king/queen! ☆",
     "wow i love beautiful things...like you! ♡",
     "talented, gorgeous, intelligent, body tea, face 10/10...that the description police have on you so far ):",
-    "nooo...you're too sexy 4 problems!",
-    "LOVE SEXY FOLKS LIKE U! ♡",
-    "why are you so successful, driven, funny, and hot?"
+    "nooo...you're too amazing 4 problems!",
+    "why are you so successful, driven, funny, and kind!"
   ];
 
   const getRandomPosition = () => {
