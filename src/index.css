@@ -533,7 +533,7 @@ li a:hover {
     padding-left: 5px;
 }
 
-/* Decorative gifs around music player - now relative to player */
+/* decorative gifs around music player - now relative to player */
 .decor-gif {
     position: absolute;
     width: 80px;
@@ -544,32 +544,32 @@ li a:hover {
 }
 
 .gif1 {
-    bottom: 60px;
-    left: 69px;
+    top: 17px;
+    left: 50px;
 }
 
 .gif2 {
-    bottom: 20px;
-    left: 400px;
+    top: 67px;
+    left: 380px;
 }
 
 .gif3 {
-    bottom: 220px;
-    left: 260px;
+    top: -140px;
+    left: 240px;
 }
 
 .gif4 {
-    bottom: 150px;
-    left: 330px;
+    top: -30px;
+    left: 310px;
 }
 
 .gif5 {
-    bottom: 220px;
-    left: 105px;
+    top: -140px;
+    left: 85px;
 }
 
 
-/* Pretty bows littered across the page */
+/* pretty bows littered across the page */
 .bow {
     position: fixed;
     object-fit: contain;
