@@ -195,7 +195,7 @@ function MusicPlayer() {
   }, []);
 
   return (
-    <Draggable handle=".window" defaultPosition={{ x: 20, y: -180 }}>
+    <Draggable handle=".window" defaultPosition={{ x: 20, y: -235 }}>
       <div style={{ position: 'fixed' }}>
         <div className="player">
           <div className="window" style={{ cursor: 'grab' }}>
