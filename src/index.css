@@ -624,9 +624,9 @@ li a:hover {
 
 .bow4 {
     width: 300px;
-    height: 300px;
-    top: 30%;
-    left: 5%;
+    height: 150px;
+    top: 6%;
+    left: 15%;
     transform: rotate(19deg);
 }
 
