@@ -1,16 +1,80 @@
-# React + Vite
+# Custom Portfolio Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Y2K-inspired, pastel-themed personal portfolio website built with React and Vite. Features a draggable music player, animated popups, guestbook, and nostalgic web aesthetics.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Draggable Music Player** - iPod-style music player with custom playlist that you can drag around the screen (with cute doll sprites that follow it!)
+- **Interactive Popups** - Random motivational messages that appear across the page
+- **Guestbook** - Let visitors leave messages
+- **Custom Cursor** - Unique cursor design for that authentic Y2K feel
+- **Sakura Petals** - Animated falling petals in the background
+- **Responsive Navigation** - Multi-page navigation (Home, About, Projects, Contact)
+- **Pastel Aesthetic** - Pink, lavender, and peach color palette with pixel fonts
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- React 18
+- Vite
+- react-draggable
+- Custom CSS animations
+- Font Awesome icons
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Run the development server:
+```bash
+npm run dev
+```
+
+3. Open your browser to the localhost URL shown in the terminal (usually http://localhost:5173)
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Home.jsx
+│   ├── About.jsx
+│   ├── Projects.jsx
+│   ├── Contact.jsx
+│   ├── Navigation.jsx
+│   ├── MusicPlayer.jsx
+│   ├── PopupWindow.jsx
+│   ├── PopupManager.jsx
+│   └── Guestbook.jsx
+├── assets/
+│   ├── images/
+│   ├── cutefooont/
+│   ├── cursoooor/
+│   └── music/
+├── App.jsx
+├── index.css
+└── main.jsx
+```
+
+## Music Player
+
+The music player includes tracks from:
+- JT
+- Rico Nasty
+- Summer Walker
+- Keri Hilson
+- Young Dolph
+- And more!
+
+##  Customization
+
+- Update colors in `index.css` (CSS variables in `:root`)
+- Add your own music files to `src/music/`
+- Customize popup messages in `PopupManager.jsx`
+- Change fonts in `src/assets/cutefooont/`
+
+## License
+
+Personal portfolio project - feel free to use as inspiration!
